@@ -3,25 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>李荣耀系列｜荣耀官网（同学恶搞版）</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0f'/%3E%3Ctext x='32' y='40' font-family='Arial,Helvetica,sans-serif' font-size='17' font-weight='700' fill='%23fff' text-anchor='middle'%3EHONOR%3C/text%3E%3C/svg%3E">
+<title>李荣耀官网｜李荣耀Magic9系列 - HONOR</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0f'/%3E%3Ctext x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-size='15' font-weight='700' fill='%23fff' text-anchor='middle'%3EHONOR%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://miaoda.feishu.cn">
 <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
 <style>
-:root{
-  --ink:#0b0b0f;
-  --paper:#ffffff;
-  --paper2:#f6f6f8;
-  --gray:#6b6e75;
-  --gray2:#9a9ca3;
-  --line:#e7e8ec;
-  --navy:#101426;
-  --navy2:#161b30;
-  --accent:#1e3af5;
-  --accent2:#6d5cff;
-  --radius:16px;
-  --font:'Noto Sans SC','PingFang SC','Microsoft YaHei',system-ui,-apple-system,sans-serif;
-}
+:root{--ink:#0b0b0f;--paper:#fff;--gray:#6b6e75;--gray2:#9a9ca3;--line:#e7e8ec;--navy:#101426;--blue:#1e3af5;--font:'Noto Sans SC','PingFang SC','Microsoft YaHei',system-ui,-apple-system,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth}
@@ -29,161 +16,192 @@ body{font-family:var(--font);color:var(--ink);background:var(--paper);line-heigh
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{font-family:inherit;cursor:pointer}
-.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
-
-/* ===== 顶部公告条 ===== */
-.topbar{background:var(--navy);color:#dfe2ee;font-size:13px;text-align:center;padding:8px 16px;letter-spacing:.02em}
-.topbar b{color:#fff;font-weight:700}
-.topbar .act{color:#b9c4ff;cursor:pointer;border-bottom:1px solid #b9c4ff;margin-left:6px}
-
-/* ===== 导航 ===== */
-.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:box-shadow .25s}
+.wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+.nav{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid var(--line);transition:box-shadow .25s}
 .nav.scrolled{box-shadow:0 4px 18px rgba(11,11,15,.06)}
-.nav-in{display:flex;align-items:center;gap:28px;height:64px}
-.logo{display:flex;align-items:center;gap:6px;flex:none;min-height:44px}
-.logo-word{font-size:22px;font-weight:900;letter-spacing:.14em;color:var(--ink)}
-.logo-cn{font-size:14px;font-weight:700;color:var(--ink);letter-spacing:.2em}
-.nav-links{display:flex;gap:24px;list-style:none;flex:1}
+.nav-in{display:flex;align-items:center;gap:18px;height:64px}
+.logo{display:flex;align-items:center;gap:8px;flex:none;min-height:44px}
+.logo-mark{height:30px;width:auto;display:block}
+.logo-cn{font-size:15px;font-weight:700;letter-spacing:.18em}
+.nav-links{display:flex;gap:16px;list-style:none;flex:1;min-width:0;overflow:hidden;white-space:nowrap}
 .nav-links a{font-size:14px;color:#333;position:relative;padding:6px 0}
-.nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--accent);transition:width .2s}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--ink);transition:width .2s}
 .nav-links a:hover::after{width:100%}
-.nav-tools{display:flex;gap:6px;flex:none}
-.icon-btn{width:40px;height:40px;border:1px solid transparent;border-radius:50%;background:none;display:grid;place-items:center;color:var(--ink)}
+.nav-tools{display:flex;align-items:center;gap:8px;flex:none}
+.icon-btn{width:40px;height:40px;border:none;border-radius:50%;background:none;display:grid;place-items:center;color:var(--ink)}
 .icon-btn:hover{background:#f0f1f4}
-
-/* ===== Hero ===== */
-.hero{background:radial-gradient(1100px 520px at 78% -8%,rgba(109,92,255,.28),transparent 60%),radial-gradient(900px 460px at 8% 110%,rgba(30,58,245,.22),transparent 55%),var(--navy);color:#fff;position:relative;overflow:hidden}
-.hero-in{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-block:72px 80px}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.18em;color:#b9c4ff;border:1px solid rgba(185,196,255,.35);padding:6px 14px;border-radius:999px;margin-bottom:22px}
-.hero h1{font-size:64px;font-weight:900;line-height:1.08;letter-spacing:-.01em;margin-bottom:14px}
-.hero h1 .thin{font-weight:300;color:#aeb6e8}
-.hero .tag{font-size:30px;font-weight:700;color:#c9d2ff;margin-bottom:16px}
-.hero p{font-size:15px;color:#c6cbe6;max-width:520px;margin-bottom:26px}
-.hero-price{display:flex;align-items:baseline;gap:10px;margin-bottom:28px}
-.hero-price .now{font-size:34px;font-weight:900;color:#fff}
-.hero-price .old{font-size:15px;color:#8d94b8;text-decoration:line-through}
-.hero-price .sub{font-size:14px;color:#8d94b8}
-.cta-row{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 30px;border-radius:999px;font-size:15px;font-weight:700;border:1px solid transparent;transition:transform .15s,box-shadow .15s,background .15s}
+.store-btn{background:var(--ink);color:#fff;font-size:14px;font-weight:700;padding:9px 20px;border-radius:999px;border:none;min-height:44px}
+.store-btn:hover{background:#222}
+.slider{position:relative;overflow:hidden;display:grid}
+.slide{grid-area:1/1;opacity:0;transition:opacity .7s ease;pointer-events:none}
+.slide.on{opacity:1;pointer-events:auto}
+.sl-bg{position:relative}
+.sl-bg .bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sl-lry{background:radial-gradient(900px 480px at 80% -10%,rgba(255,255,255,.65),transparent 55%),linear-gradient(120deg,#f7f9fd,#e9edf7 55%,#d7def0)}
+.sl-lry .credit{position:absolute;right:44px;bottom:34px;text-align:right;z-index:3}
+.sl-lry .credit .n{font-size:18px;font-weight:900;color:#0b0b0f;line-height:1.3}
+.sl-lry .credit .t{font-size:12px;font-weight:700;letter-spacing:.14em;color:#44485a}
+.sl-lry .slide-art img{object-position:center 18%}
+.slide2{background:radial-gradient(1000px 520px at 30% 0%,rgba(109,92,255,.55),transparent 60%),linear-gradient(135deg,#141a3e,#2b3174 60%,#4b46b8)}
+.slide-in{height:650px;display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.sl-1 .slide-in{grid-template-columns:1.1fr .9fr}
+.slide1 .slide-in{color:#5a3c05}
+.slide .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.2em;padding:6px 14px;border:1px solid rgba(0,0,0,.25);border-radius:999px;margin-bottom:22px}
+.slide2 .eyebrow{border-color:rgba(255,255,255,.35);color:#c9d2ff}
+.slide h1{font-size:56px;font-weight:900;line-height:1.12;margin-bottom:14px}
+.slide .sub{font-size:30px;font-weight:700;margin-bottom:20px}
+.slide2 .sub{color:#dfe4ff}
+.slide .gift{display:inline-block;font-size:14px;font-weight:700;background:rgba(255,255,255,.85);padding:8px 16px;border-radius:999px;margin-bottom:24px}
+.slide2 .gift{background:rgba(255,255,255,.1);color:#dfe4ff}
+.slide .btns{display:flex;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 32px;border-radius:999px;font-size:15px;font-weight:700;border:none;transition:transform .15s,box-shadow .15s}
 .btn:active{transform:scale(.97)}
-.btn-dark{background:#fff;color:var(--navy)}
-.btn-dark:hover{box-shadow:0 8px 24px rgba(255,255,255,.25)}
-.btn-ghost{border-color:#5a6189;color:#dfe2f2;background:rgba(255,255,255,.04)}
-.btn-ghost:hover{background:rgba(255,255,255,.1)}
-.hero-art{position:relative;display:grid;place-items:center}
-.hero-photo{border-radius:26px;box-shadow:0 30px 80px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.14);overflow:hidden;width:min(320px,78%);aspect-ratio:504/644}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
-.float-badge{position:absolute;background:#fff;color:var(--ink);border-radius:14px;padding:10px 16px;font-size:13px;font-weight:700;box-shadow:0 12px 34px rgba(0,0,0,.35)}
-.float-badge .num{display:block;font-size:22px;font-weight:900;color:var(--accent)}
-.fb1{top:12%;right:2%}
-.fb2{bottom:14%;left:0}
-.hero-deco{position:absolute;inset:0;pointer-events:none}
-.hero-deco span{position:absolute;border-radius:50%;background:rgba(255,255,255,.05)}
-.hero-deco .d1{width:240px;height:240px;top:-90px;right:8%}
-.hero-deco .d2{width:120px;height:120px;bottom:40px;left:6%}
-
-/* ===== 数据条 ===== */
-.stats{border-bottom:1px solid var(--line)}
-.stats-in{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-block:34px}
-.stat{text-align:center}
-.stat .v{font-size:32px;font-weight:900;letter-spacing:-.01em}
-.stat .k{font-size:14px;color:var(--gray);margin-top:4px}
-.stat:nth-child(1) .v{color:var(--accent)}
-.stat:nth-child(2) .v{color:var(--accent2)}
-.stat:nth-child(3) .v{color:var(--ink)}
-.stat:nth-child(4) .v{color:#b45309}
-
-/* ===== 通用区块头 ===== */
-.section{padding:76px 0}
-.section-head{max-width:720px;margin-bottom:44px}
-.eyebrow{font-size:13px;font-weight:700;letter-spacing:.22em;color:var(--accent);text-transform:uppercase;margin-bottom:10px}
-.section-head h2{font-size:40px;font-weight:900;letter-spacing:-.01em;line-height:1.15}
-.section-head .desc{color:var(--gray);font-size:15px;margin-top:10px}
-.head-row{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:40px}
-.head-row .right{flex:none}
-
-/* ===== 产品系列 Tab ===== */
-.tabs{display:flex;gap:8px;margin-bottom:34px;flex-wrap:wrap}
-.tab{padding:12px 22px;border-radius:999px;border:1px solid var(--line);background:var(--paper);font-size:14px;font-weight:700;color:#555;transition:all .2s}
-.tab:hover{border-color:var(--accent);color:var(--accent)}
-.tab.on{background:var(--navy);border-color:var(--navy);color:#fff}
-.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.prod{background:var(--paper2);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;cursor:pointer}
-.prod:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(11,11,15,.10)}
-.prod-illu{height:150px;border-radius:12px;background:linear-gradient(150deg,#161b30,#232a4d);display:grid;place-items:center;margin-bottom:18px;color:#c9d2ff}
-.prod:nth-child(4n+2) .prod-illu{background:linear-gradient(150deg,#101426,#2c2f66)}
-.prod:nth-child(4n+3) .prod-illu{background:linear-gradient(150deg,#141733,#26214d)}
-.prod:nth-child(4n+4) .prod-illu{background:linear-gradient(150deg,#101426,#1f2740)}
-.prod h3{font-size:17px;font-weight:700;margin-bottom:8px}
-.prod p{font-size:14px;color:var(--gray);flex:1;margin-bottom:14px}
-.prod .price{font-weight:900;font-size:18px}
-.prod .price small{font-weight:500;color:var(--gray2);font-size:12px;margin-left:4px}
-.prod .tag-new{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-bottom:10px;align-self:flex-start}
-
-/* ===== 代言人 ===== */
-.amb{background:var(--paper2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.amb-in{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center;padding-block:80px}
-.amb-photo{border-radius:22px;overflow:hidden;box-shadow:0 24px 60px rgba(11,11,15,.16);border:1px solid var(--line);position:relative}
-.amb-photo img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 18%}
-.amb-photo::after{content:'全球代言人 · 全天候在岗';position:absolute;left:16px;bottom:16px;background:rgba(11,11,15,.78);color:#fff;font-size:12px;padding:6px 12px;border-radius:999px;letter-spacing:.06em}
-.amb h2{font-size:40px;font-weight:900;line-height:1.1;margin-bottom:6px}
-.amb .en{font-size:14px;letter-spacing:.28em;color:var(--gray2);margin-bottom:18px}
-.amb .quote{font-size:19px;font-weight:500;color:#333;border-left:3px solid var(--accent);padding-left:16px;margin-bottom:24px}
-.id-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.id-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
-.id-card .k{font-size:13px;color:var(--gray2);letter-spacing:.08em;margin-bottom:4px}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{box-shadow:0 10px 26px rgba(0,0,0,.25)}
+.btn-line{border:1px solid rgba(0,0,0,.4);background:transparent}
+.slide2 .btn-line{border-color:rgba(255,255,255,.5);color:#fff}
+.slide-art{position:relative;height:100%;display:grid;place-items:center}
+.slide-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.slide2 .big-num{font-size:340px;font-weight:900;line-height:1;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.65);background:linear-gradient(160deg,#e7e9ff,#9f9dff);-webkit-background-clip:text;background-clip:text}
+.slide2 .os-name{position:absolute;left:50%;bottom:52px;transform:translateX(-50%);font-size:40px;font-weight:900;letter-spacing:.14em;color:#fff;text-shadow:0 6px 30px rgba(0,0,0,.35)}
+.slide2 .arc{position:absolute;width:760px;height:760px;border-radius:50%;border:1px solid rgba(255,255,255,.18);top:50%;left:50%;transform:translate(-50%,-50%)}
+.slide2 .arc::after{content:'';position:absolute;inset:-130px;border-radius:50%;border:1px solid rgba(255,255,255,.1)}
+.slider-arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:none;background:rgba(255,255,255,.85);display:grid;place-items:center;z-index:6;box-shadow:0 4px 16px rgba(0,0,0,.12)}
+.slider-arrow:hover{background:#fff}
+.arr-l{left:18px}
+.arr-r{right:18px}
+.slider-dots{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:5}
+.dot{width:8px;height:8px;border-radius:999px;background:rgba(0,0,0,.25);border:none;transition:all .25s}
+.dot.on{width:22px;background:var(--ink)}
+.slide2 .dot{background:rgba(255,255,255,.4)}
+.slide2 .dot.on{background:#fff}
+.section{padding-block:72px}
+.sec-head{text-align:center;margin-bottom:40px}
+.sec-head .eyebrow{font-size:12px;font-weight:700;letter-spacing:.24em;color:var(--gray2);margin-bottom:8px}
+.sec-head h2{font-size:36px;font-weight:900;letter-spacing:-.01em}
+.sec-head .desc{color:var(--gray);font-size:15px;margin-top:8px}
+.tri-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tri{border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:box-shadow .25s,transform .25s;cursor:pointer}
+.tri:hover{box-shadow:0 18px 44px rgba(11,11,15,.12);transform:translateY(-4px)}
+.tri .ph{aspect-ratio:4/3;position:relative;overflow:hidden}
+.tri .ph img{width:100%;height:100%;object-fit:cover}
+.tri .body{padding:22px 24px 26px}
+.tri h3{font-size:21px;font-weight:800;margin-bottom:6px}
+.tri .slogan{font-size:15px;color:#333;margin-bottom:12px}
+.tri .price{font-size:22px;font-weight:900;margin-bottom:16px}
+.tri .price small{font-weight:500;color:var(--gray2);font-size:13px;margin-left:6px;text-decoration:line-through}
+.tri .ops{display:flex;gap:10px}
+.tri .ops .btn{padding:9px 22px;font-size:14px}
+.all-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.all-head h2{font-size:36px;font-weight:900}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:14px;font-weight:700;color:#555;transition:all .2s}
+.tab:hover{border-color:var(--ink);color:var(--ink)}
+.tab.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cat{border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:box-shadow .2s,transform .2s;cursor:pointer}
+.cat:hover{box-shadow:0 14px 36px rgba(11,11,15,.10);transform:translateY(-3px)}
+.cat .ph{aspect-ratio:1/1;overflow:hidden;position:relative}
+.cat .ph img{width:100%;height:100%;object-fit:cover}
+.cat .body{padding:16px 18px 18px}
+.cat h3{font-size:16px;font-weight:800;margin-bottom:4px}
+.cat .slogan{font-size:14px;color:var(--gray);margin-bottom:12px}
+.cat .ops{display:flex;gap:12px;font-size:14px;font-weight:700}
+.cat .ops .buy{color:var(--ink);border-bottom:2px solid var(--ink);cursor:pointer}
+.cat .ops .more{cursor:pointer}
+.cat .ops .more:hover{color:var(--blue)}
+.events{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.event{position:relative;border-radius:18px;overflow:hidden;padding:44px 40px;color:#fff;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;cursor:pointer;transition:transform .2s}
+.event:hover{transform:translateY(-4px)}
+.event .en{font-size:11px;letter-spacing:.24em;color:rgba(255,255,255,.75);margin-bottom:10px}
+.event h3{font-size:26px;font-weight:900;line-height:1.25;margin-bottom:8px}
+.event .date{font-size:14px;color:rgba(255,255,255,.85);margin-bottom:18px}
+.event .more{font-size:14px;font-weight:700;display:inline-flex;align-items:center;gap:6px;border-bottom:1px solid rgba(255,255,255,.7);padding-bottom:2px;width:max-content}
+.ev-kite{background:radial-gradient(700px 400px at 85% 10%,rgba(255,255,255,.4),transparent 55%),linear-gradient(150deg,#ffc98f,#ef8f4e 55%,#d96a3c)}
+.ev-launch{background:radial-gradient(800px 460px at 15% 0%,rgba(109,92,255,.5),transparent 55%),linear-gradient(140deg,#141a3e,#232a6b 55%,#3b3599)}
+.ev-kite .kite-svg{position:absolute;top:34px;right:46px;opacity:.95}
+.tech-band{text-align:center;margin-top:22px;font-size:30px;font-weight:900;letter-spacing:.02em}
+.ai-banner{position:relative;border-radius:18px;overflow:hidden;background:linear-gradient(120deg,#0b1c52,#14327a 55%,#1e4fa8);color:#fff;margin-top:44px;cursor:pointer}
+.ai-banner .inner{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:20px;min-height:340px}
+.ai-banner .txt{padding-block:44px;padding-left:48px}
+.ai-banner .badge{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:800;letter-spacing:.1em;padding:8px 16px;border:1px solid rgba(255,255,255,.35);border-radius:999px;margin-bottom:18px}
+.ai-banner h3{font-size:38px;font-weight:900;line-height:1.15;margin-bottom:12px}
+.ai-banner p{font-size:15px;color:#c6d4f2;margin-bottom:22px}
+.ai-banner .img{position:relative;height:100%;min-height:300px}
+.ai-banner .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ai-banner .chip{position:absolute;right:24px;bottom:20px;font-size:11px;letter-spacing:.08em;color:rgba(255,255,255,.7)}
+.eye-banner{position:relative;border-radius:18px;overflow:hidden;background:radial-gradient(900px 480px at 80% 20%,rgba(255,255,255,.55),transparent 55%),linear-gradient(160deg,#b7e0a8,#6faf6e 55%,#3f8a5a);margin-top:44px;padding:56px 48px;color:#173d20;cursor:pointer}
+.eye-banner h3{font-size:40px;font-weight:900;margin-bottom:10px}
+.eye-banner p{font-size:16px;font-weight:500;margin-bottom:22px;color:#24542c}
+.eye-banner .btn{background:#173d20;color:#fff}
+.amb{background:#f7f7f9;border-block:1px solid var(--line)}
+.amb-in{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center;padding-block:72px}
+.film{position:relative;border-radius:20px;overflow:hidden;box-shadow:0 24px 60px rgba(11,11,15,.18)}
+.film img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 22%}
+.film .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50%;background:rgba(255,255,255,.92);border:none;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.3);transition:transform .2s}
+.film .play:hover{transform:translate(-50%,-50%) scale(1.08)}
+.film .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 20px 16px;background:linear-gradient(transparent,rgba(0,0,0,.72));color:#fff;font-size:13px}
+.amb h2{font-size:38px;font-weight:900;line-height:1.12;margin-bottom:10px}
+.amb .en{font-size:13px;letter-spacing:.28em;color:var(--gray2);margin-bottom:16px}
+.amb .quote{font-size:18px;font-weight:500;color:#333;border-left:3px solid var(--blue);padding-left:16px;margin-bottom:22px}
+.id-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.id-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.id-card .k{font-size:12px;color:var(--gray2);letter-spacing:.08em;margin-bottom:3px}
 .id-card .v{font-size:15px;font-weight:700}
-
-/* ===== 服务支持 ===== */
-.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.svc{border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;transition:border-color .2s,transform .2s;cursor:pointer}
-.svc:hover{border-color:var(--accent);transform:translateY(-3px)}
-.svc .ic{width:44px;height:44px;border-radius:12px;background:var(--navy);color:#c9d2ff;display:grid;place-items:center;margin-bottom:16px}
-.svc h3{font-size:16px;font-weight:700;margin-bottom:6px}
-.svc p{font-size:14px;color:var(--gray)}
-
-/* ===== 会员条 ===== */
-.member{background:radial-gradient(800px 320px at 20% 0%,rgba(30,58,245,.32),transparent 60%),var(--navy);color:#fff;border-radius:24px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:40px 48px;margin:0 0 80px}
-.member h3{font-size:26px;font-weight:900;margin-bottom:6px}
-.member p{font-size:14px;color:#b9bfdd}
-
-/* ===== Footer ===== */
-.footer{background:#0a0a0e;color:#9a9ca3;padding:56px 0 32px;font-size:13px}
-.footer-top{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:28px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px}
+.duo-card{position:relative;border-radius:18px;overflow:hidden;padding:40px;min-height:240px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;cursor:pointer;transition:transform .2s}
+.duo-card:hover{transform:translateY(-4px)}
+.duo-card h3{font-size:30px;font-weight:900;margin-bottom:6px}
+.duo-card p{font-size:14px;color:rgba(255,255,255,.85);margin-bottom:14px}
+.duo-card .more{font-size:14px;font-weight:700;border-bottom:1px solid rgba(255,255,255,.7);width:max-content;padding-bottom:2px}
+.duo-aimage{background:radial-gradient(700px 380px at 85% 0%,rgba(255,255,255,.35),transparent 55%),linear-gradient(140deg,#0f2547,#1b4a8f 60%,#2c7fd4)}
+.duo-ai{background:radial-gradient(700px 380px at 85% 0%,rgba(255,255,255,.25),transparent 55%),linear-gradient(140deg,#101426,#20265e 60%,#4b46b8)}
+.footer{background:#0a0a0e;color:#9a9ca3;font-size:13px;padding-block:52px 28px}
+.footer-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:24px}
 .footer h4{color:#fff;font-size:14px;font-weight:700;margin-bottom:14px}
 .footer ul{list-style:none}
-.footer li{margin-bottom:8px}
-.footer li a{cursor:pointer}
-.footer li a:hover{color:#fff}
-.footer-bottom{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#62656d}
-.footer-bottom .note{color:#4a4d55}
-
-/* ===== Toast ===== */
-#toast{position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);background:var(--navy);color:#fff;padding:12px 24px;border-radius:999px;font-size:14px;font-weight:500;opacity:0;pointer-events:none;transition:all .3s;z-index:999;box-shadow:0 12px 34px rgba(0,0,0,.3)}
+.footer li{margin-bottom:8px;cursor:pointer}
+.footer li:hover{color:#fff}
+.footer .hot-num{font-size:15px;color:#fff;font-weight:800;margin-bottom:10px}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.socials{display:flex;gap:10px}
+.socials span{width:32px;height:32px;border:1px solid #333;border-radius:50%;display:grid;place-items:center;cursor:pointer}
+.socials span:hover{border-color:#fff;color:#fff}
+.footer-legals{display:flex;gap:18px;flex-wrap:wrap;color:#62656d}
+.footer-legals span{cursor:pointer}
+.footer-legals span:hover{color:#fff}
+.footer .note{color:#4a4d55;font-size:12px}
+#toast{position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);background:var(--navy);color:#fff;padding:12px 24px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:all .3s;z-index:999;box-shadow:0 12px 34px rgba(0,0,0,.3)}
 #toast.show{opacity:1;transform:translate(-50%,0)}
-
-/* ===== 响应式 ===== */
-@media (max-width:960px){
-  .hero-in{grid-template-columns:1fr;padding-block:52px 60px;text-align:left}
-  .hero h1{font-size:46px}
-  .hero .tag{font-size:24px}
-  .hero-photo{width:min(260px,70%)}
-  .amb-in{grid-template-columns:1fr;gap:32px}
-  .prod-grid,.svc-grid{grid-template-columns:repeat(2,1fr)}
-  .footer-top{grid-template-columns:repeat(2,1fr)}
-}
-@media (max-width:640px){
+@media (max-width:1080px){
   .nav-links{display:none}
+  .slide-in{height:520px}
+  .slide h1{font-size:42px}
+  .slide .sub{font-size:24px}
+  .slide2 .big-num{font-size:240px}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:760px){
+  .sl-bg{height:440px}
   .icon-btn{width:44px;height:44px}
-  .stats-in{grid-template-columns:repeat(2,1fr);gap:24px}
-  .section{padding:56px 0}
-  .section-head h2{font-size:30px}
-  .amb h2{font-size:30px}
-  .prod-grid,.svc-grid{grid-template-columns:1fr}
-  .id-grid{grid-template-columns:1fr}
-  .member{flex-direction:column;align-items:flex-start;padding:30px 26px;margin-bottom:56px}
-  .footer-top{grid-template-columns:1fr}
-  .fb1{right:0}
+  .store-btn{padding:11px 22px}
+  .tri .ops .btn{padding:11px 22px}
+  .tab{padding:11px 18px}
+  .slide-in{height:auto;grid-template-columns:1fr;padding-block:40px;text-align:center}
+  .sl-1 .slide-in{grid-template-columns:1fr}
+  .slide .btns,.slide .gift{justify-content:center}
+  .slide-art{height:280px}
+  .slide2 .big-num{font-size:180px}
+  .tri-grid,.events,.duo{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr}
+  .ai-banner .inner{grid-template-columns:1fr;text-align:center}
+  .ai-banner .txt{padding:36px 24px 0}
+  .ai-banner .img{min-height:220px}
+  .amb-in{grid-template-columns:1fr;gap:32px}
+  .section{padding-block:52px}
+  .sec-head h2{font-size:28px}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -192,218 +210,316 @@ button{font-family:inherit;cursor:pointer}
 </style>
 </head>
 <body>
+
 <!-- ===== SVG 图标库 ===== -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink">
   <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16.5 16.5 21 21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
-  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.4 12.2a1.5 1.5 0 0 0 1.47 1.2h8.9a1.5 1.5 0 0 0 1.46-1.18L21 8H6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="21" r="1.4" fill="currentColor"/><circle cx="17" cy="21" r="1.4" fill="currentColor"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 18.2h3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
-  <symbol id="i-tablet" viewBox="0 0 24 24"><rect x="4.5" y="3.5" width="15" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 17.6h.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
-  <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="10" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M2.5 18.5h19l-1-2.5h-17l-1 2.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
-  <symbol id="i-watch" viewBox="0 0 24 24"><path d="M8.5 6.5h7l1 4.5 1 5-1 4.5h-7l-1-4.5-1-5 1-4.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.5 3h5v3.5h-5V3ZM9.5 21h5v-3.5h-5V21Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
-  <symbol id="i-eraser" viewBox="0 0 24 24"><path d="m8.5 4.5 11 11a1.4 1.4 0 0 1 0 2l-2 2a1.4 1.4 0 0 1-2 0l-11-11a1.4 1.4 0 0 1 0-2l2-2a1.4 1.4 0 0 1 2 0Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 19.5h13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
-  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6.5 9.5a5.5 5.5 0 0 1 11 0c0 3.5 1.5 5 2 5.5h-15c.5-.5 2-2 2-5.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 18a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
-  <symbol id="i-walk" viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5v6m0 0 2.5 6M12 13.5 9 17m3-2 2.5-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16.5H6.5A2.5 2.5 0 0 0 4 22V5.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M20 12H6.5a2.5 2.5 0 0 0 0 5H20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></symbol>
+  <symbol id="i-arr-l" viewBox="0 0 24 24"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arr-r" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3.5 8.5 7 12l4.5-6L16 12l4.5-3.5L18.5 18h-13L3.5 8.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-kite" viewBox="0 0 120 120"><path d="M60 8 100 44l-40 68L20 44 60 8Z" fill="rgba(255,255,255,.85)" stroke="rgba(90,60,5,.35)" stroke-width="2"/><path d="M60 8 42 46l18 66 18-66L60 8Z" fill="rgba(255,255,255,.4)"/><path d="M60 76c14 22 30 30 44 28" fill="none" stroke="rgba(90,60,5,.5)" stroke-width="2.5" stroke-linecap="round"/><path d="M60 26V44" stroke="rgba(90,60,5,.4)" stroke-width="2"/></symbol>
+  <symbol id="i-weibo" viewBox="0 0 24 24"><circle cx="9" cy="14" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M18 5c-1.2 0-2 1-2 2 0 .6.4 1 1 1 .6 0 1 .4 1 1 0 1.2-1 2-2 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-wechat" viewBox="0 0 24 24"><path d="M4 11.5C4 8 7 5.5 10.5 5.5S17 8 17 11.5 14 17.5 10.5 17.5c-1 0-1.9-.2-2.7-.5L4 18.5l1.2-2.6c-.7-.9-1.2-2-1.2-3.2v-1.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.5" cy="11.5" r="1.1" fill="currentColor"/><circle cx="12.5" cy="11.5" r="1.1" fill="currentColor"/></symbol>
+  <symbol id="i-toutiao" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 8.5v7M8.5 12h7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-douyin" viewBox="0 0 24 24"><path d="M15 4c.6 2.6 2.2 4 4.5 4.3v2.6c-1.8 0-3.2-.6-4.5-1.7v6.6a5.2 5.2 0 1 1-5.2-5.2c.3 0 .6 0 .9.1v2.8a2.4 2.4 0 1 0 1.5 2.2V4H15Z" fill="currentColor"/></symbol>
 </svg>
 
-<!-- ===== 顶部公告条 ===== -->
-<div class="topbar">马厕班首发 · <b>李荣耀 X1 呆萌版</b> 正式开售，同桌谢某亲情推荐 <span class="act js-toast">领发呆津贴</span></div>
-
 <!-- ===== 导航 ===== -->
+<div id="top"></div>
 <nav class="nav" id="nav">
   <div class="wrap nav-in">
     <a class="logo" href="#top">
-      <span class="logo-word">HONOR</span>
-      <span class="logo-cn">荣耀</span>
+      <img class="logo-mark" src="logo.png" alt="HONOR">
+      <span class="logo-cn">李荣耀</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#products">最新产品</a></li>
-      <li><a href="#ambassador">代言人</a></li>
+      <li><a href="#products">手机</a></li>
+      <li><a href="#products">笔记本</a></li>
+      <li><a href="#products">平板</a></li>
+      <li><a href="#products">穿戴</a></li>
+      <li><a href="#products">音频</a></li>
+      <li><a href="#products">更多产品</a></li>
+      <li><a href="#magic-os">MagicOS</a></li>
+      <li><a href="#ambassador">李荣耀机器人</a></li>
+      <li><a href="#ambassador">李荣耀俱乐部</a></li>
       <li><a href="#services">服务支持</a></li>
-      <li><a href="#member">李荣耀俱乐部</a></li>
-      <li><a class="js-toast" href="#top">荣耀商城</a></li>
+      <li><a href="#ambassador">探索李荣耀</a></li>
     </ul>
     <div class="nav-tools">
       <button class="icon-btn js-toast" aria-label="搜索"><svg width="19" height="19"><use href="#i-search" xlink:href="#i-search"/></svg></button>
-      <button class="icon-btn js-toast" aria-label="购物车"><svg width="20" height="20"><use href="#i-cart" xlink:href="#i-cart"/></svg></button>
+      <button class="icon-btn js-toast" aria-label="我的"><svg width="20" height="20"><use href="#i-user" xlink:href="#i-user"/></svg></button>
+      <button class="store-btn js-toast">李荣耀商城</button>
     </div>
   </div>
 </nav>
 
-<!-- ===== Hero ===== -->
-<header class="hero" id="top">
-  <div class="hero-deco"><span class="d1"></span><span class="d2"></span></div>
-  <div class="wrap hero-in">
-    <div>
-      <span class="hero-eyebrow">HONOR 李荣耀系列 · 班级首发</span>
-      <h1>李荣耀 <span class="thin">10X Pro</span></h1>
-      <div class="tag">发呆双百分 · 同桌稳如泰山</div>
-      <p>马厕班学生，很呆，和谢某坐同桌。以全天候发呆续航与稳定的同桌关系闻名班级，是老师眼中「坐着不动」的模范代表。</p>
-      <div class="hero-price">
-        <span class="now">¥0.01</span>
-        <span class="old">¥9999</span>
-        <span class="sub">起 · 首付 ¥0 · 支持货到付款（校门口当面付）</span>
+<!-- ===== 横幅轮播（3 秒自动切换） ===== -->
+<div class="slider" id="slider">
+  <section class="slide sl-lry on sl-1">
+    <div class="wrap slide-in">
+      <div>
+        <span class="eyebrow">阿莱联合研发 ARRI®</span>
+        <h1>李荣耀Magic9 系列</h1>
+        <div class="sub">超清双两亿 掌中电影机</div>
+        <span class="gift">赠1年碎屏宝</span>
+        <div class="btns">
+          <button class="btn btn-dark js-toast">购买</button>
+          <button class="btn btn-line js-toast">了解更多</button>
+        </div>
       </div>
-      <div class="cta-row">
-        <button class="btn btn-dark js-toast">立即抢购</button>
-        <a class="btn btn-ghost" href="#ambassador">了解李荣耀</a>
-      </div>
+      <div class="slide-art"><img src="hero-lirongyao.jpg" alt="李荣耀 荣耀旗舰手机全球代言人"></div>
     </div>
-    <div class="hero-art">
-      <div class="hero-photo"><img src="portrait.jpg" alt="品牌代言人李荣耀"></div>
-      <div class="float-badge fb1"><span class="num">100%</span>呆萌指数</div>
-      <div class="float-badge fb2"><span class="num">100%</span>同桌默契</div>
+    <div class="credit">
+      <div class="n">李荣耀</div>
+      <div class="t">荣耀旗舰手机全球代言人</div>
     </div>
-  </div>
-</header>
-
-<!-- ===== 数据条 ===== -->
-<div class="stats">
-  <div class="wrap stats-in">
-    <div class="stat"><div class="v">24h</div><div class="k">发呆续航（不间断）</div></div>
-    <div class="stat"><div class="v">100%</div><div class="k">同桌默契度（与谢某）</div></div>
-    <div class="stat"><div class="v">5 天</div><div class="k">周出勤（周一至周五）</div></div>
-    <div class="stat"><div class="v">随缘</div><div class="k">作业完成率</div></div>
+  </section>
+  <section class="slide sl-bg">
+    <img class="bg-img" src="banner-yellow.jpg" alt="李荣耀Magic9 超能版">
+  </section>
+  <section class="slide sl-bg" id="magic-os">
+    <img class="bg-img" src="banner-magicos.jpg" alt="李荣耀MagicOS 11">
+  </section>
+  <button class="slider-arrow arr-l" id="arr-l" aria-label="上一张"><svg width="20" height="20"><use href="#i-arr-l" xlink:href="#i-arr-l"/></svg></button>
+  <button class="slider-arrow arr-r" id="arr-r" aria-label="下一张"><svg width="20" height="20"><use href="#i-arr-r" xlink:href="#i-arr-r"/></svg></button>
+  <div class="slider-dots" id="slider-dots">
+    <button class="dot on" data-i="0" aria-label="第1张"></button>
+    <button class="dot" data-i="1" aria-label="第2张"></button>
+    <button class="dot" data-i="2" aria-label="第3张"></button>
   </div>
 </div>
 
-<!-- ===== 最新产品 ===== -->
+<!-- ===== 三列产品 ===== -->
 <section class="section" id="products">
   <div class="wrap">
-    <div class="head-row">
-      <div class="section-head">
-        <div class="eyebrow">Latest Products</div>
-        <h2>最新产品 · 李荣耀全系</h2>
-        <p class="desc">覆盖发呆、学习、出行全场景，总有一款适合马厕班。</p>
-      </div>
-      <div class="right"><button class="btn btn-dark js-toast" style="padding:11px 26px">查看全部系列</button></div>
+    <div class="sec-head">
+      <div class="eyebrow">LATEST PRODUCTS</div>
+      <h2>最新产品</h2>
+      <p class="desc">李荣耀 Magic 系列 · 全能旗舰</p>
     </div>
-    <div class="tabs" id="tabs">
-      <button class="tab on" data-tab="phones">手机</button>
-      <button class="tab" data-tab="pads">平板</button>
-      <button class="tab" data-tab="laptops">笔记本</button>
-      <button class="tab" data-tab="wear">智慧穿戴</button>
-    </div>
-    <div class="prod-grid" id="g-phones" data-group="phones">
-      <article class="prod js-toast">
-        <span class="tag-new">NEW</span>
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-phone" xlink:href="#i-phone"/></svg></div>
-        <h3>荣耀发呆机 Pro</h3>
-        <p>全天候呆萌续航，上课走神不卡顿，下课满血回神。</p>
-        <div class="price">¥0.01<small>起</small></div>
+    <div class="tri-grid">
+      <article class="tri js-toast">
+        <div class="ph"><img src="phone-green.jpg" alt="李荣耀Magic9 Pro Max"></div>
+        <div class="body">
+          <h3>李荣耀Magic9 Pro Max</h3>
+          <div class="slogan">超清双两亿 掌中电影机</div>
+          <div class="ops">
+            <button class="btn btn-dark">购买</button>
+            <button class="btn btn-line">了解更多</button>
+          </div>
+        </div>
       </article>
-      <article class="prod js-toast">
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-phone" xlink:href="#i-phone"/></svg></div>
-        <h3>荣耀同桌感知版</h3>
-        <p>谢某起身即时提醒，同桌动态实时掌握，稳坐不慌。</p>
-        <div class="price">¥0.01<small>起</small></div>
+      <article class="tri js-toast">
+        <div class="ph"><img src="watch.jpg" alt="李荣耀手表6 Pro"></div>
+        <div class="body">
+          <h3>李荣耀手表6 Pro</h3>
+          <div class="slogan">心脏血压健康专家</div>
+          <div class="price">¥1699<small>¥1799起</small></div>
+          <div class="ops">
+            <button class="btn btn-dark">购买</button>
+            <button class="btn btn-line">了解更多</button>
+          </div>
+        </div>
       </article>
-      <article class="prod js-toast">
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-phone" xlink:href="#i-phone"/></svg></div>
-        <h3>荣耀课桌影像版</h3>
-        <p>课本 2 倍变焦，前排笔记清晰可见，抄写零延迟。</p>
-        <div class="price">¥0.01<small>起</small></div>
-      </article>
-      <article class="prod js-toast">
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-phone" xlink:href="#i-phone"/></svg></div>
-        <h3>荣耀橡皮共享版</h3>
-        <p>忘带橡皮？同桌的永远是最好的，随借随还（大概）。</p>
-        <div class="price">¥0.01<small>起</small></div>
-      </article>
-    </div>
-    <div class="prod-grid" id="g-pads" data-group="pads" hidden>
-      <article class="prod js-toast">
-        <span class="tag-new">NEW</span>
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-tablet" xlink:href="#i-tablet"/></svg></div>
-        <h3>荣耀涂鸦平板 X1</h3>
-        <p>课本涂鸦双开，灵感随时记录，画完还能假装听课。</p>
-        <div class="price">¥0.01<small>起</small></div>
-      </article>
-      <article class="prod js-toast">
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-tablet" xlink:href="#i-tablet"/></svg></div>
-        <h3>荣耀午休平板</h3>
-        <p>趴桌即睡，秒入梦乡，午休效率全班第一。</p>
-        <div class="price">¥0.01<small>起</small></div>
-      </article>
-      <article class="prod js-toast">
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-tablet" xlink:href="#i-tablet"/></svg></div>
-        <h3>荣耀窗边平板</h3>
-        <p>上课看窗外，4K 全景画质，云朵动态实时更新。</p>
-        <div class="price">¥0.01<small>起</small></div>
-      </article>
-      <article class="prod js-toast">
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-tablet" xlink:href="#i-tablet"/></svg></div>
-        <h3>荣耀操场平板</h3>
-        <p>下课冲操场，低延迟零卡顿，抢球永不掉线。</p>
-        <div class="price">¥0.01<small>起</small></div>
-      </article>
-    </div>
-    <div class="prod-grid" id="g-laptops" data-group="laptops" hidden>
-      <article class="prod js-toast">
-        <span class="tag-new">NEW</span>
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-laptop" xlink:href="#i-laptop"/></svg></div>
-        <h3>荣耀笔记速记本</h3>
-        <p>老师讲到哪里跟到哪里（大概），字迹仅供自己辨认。</p>
-        <div class="price">¥0.01<small>起</small></div>
-      </article>
-      <article class="prod js-toast">
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-laptop" xlink:href="#i-laptop"/></svg></div>
-        <h3>荣耀作业处理本</h3>
-        <p>处理速度视心情而定，高峰期排队，恕不加急。</p>
-        <div class="price">¥0.01<small>起</small></div>
-      </article>
-      <article class="prod js-toast">
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-laptop" xlink:href="#i-laptop"/></svg></div>
-        <h3>荣耀走神记录本</h3>
-        <p>科学记录每天走神 24 次，数据支持导出（给家长看）。</p>
-        <div class="price">¥0.01<small>起</small></div>
-      </article>
-      <article class="prod js-toast">
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-laptop" xlink:href="#i-laptop"/></svg></div>
-        <h3>荣耀听写复读本</h3>
-        <p>核心功能：复读「啊？你说啥？」，支持 24h 循环。</p>
-        <div class="price">¥0.01<small>起</small></div>
-      </article>
-    </div>
-    <div class="prod-grid" id="g-wear" data-group="wear" hidden>
-      <article class="prod js-toast">
-        <span class="tag-new">NEW</span>
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-watch" xlink:href="#i-watch"/></svg></div>
-        <h3>荣耀同桌感知手环</h3>
-        <p>谢某靠近自动振动提醒，同桌动态尽在腕间。</p>
-        <div class="price">¥0.01<small>起</small></div>
-      </article>
-      <article class="prod js-toast">
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-watch" xlink:href="#i-watch"/></svg></div>
-        <h3>荣耀放学倒计时表</h3>
-        <p>精准倒数放学时间，误差小于一节课。</p>
-        <div class="price">¥0.01<small>起</small></div>
-      </article>
-      <article class="prod js-toast">
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-watch" xlink:href="#i-watch"/></svg></div>
-        <h3>荣耀发呆监测仪</h3>
-        <p>发呆时长科学统计，荣获班级「呆神」称号的必备设备。</p>
-        <div class="price">¥0.01<small>起</small></div>
-      </article>
-      <article class="prod js-toast">
-        <div class="prod-illu"><svg width="58" height="58"><use href="#i-watch" xlink:href="#i-watch"/></svg></div>
-        <h3>荣耀橡皮定位器</h3>
-        <p>橡皮丢了也能找到，从此告别「又借我一块」。</p>
-        <div class="price">¥0.01<small>起</small></div>
+      <article class="tri js-toast">
+        <div class="ph"><img src="pad.jpg" alt="李荣耀MagicPad 4"></div>
+        <div class="body">
+          <h3>李荣耀MagicPad 4 12.1"</h3>
+          <div class="slogan">越上手 越拿手</div>
+          <div class="price">¥3299<small>¥4199起</small></div>
+          <div class="ops">
+            <button class="btn btn-dark">购买</button>
+            <button class="btn btn-line">了解更多</button>
+          </div>
+        </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ===== 代言人 ===== -->
+<!-- ===== 所有产品 ===== -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="all-head">
+      <h2>所有产品</h2>
+      <div class="tabs" id="tabs">
+        <button class="tab on" data-group="g-hot">最新产品</button>
+        <button class="tab" data-group="g-phone">手机</button>
+        <button class="tab" data-group="g-pc">笔记本</button>
+        <button class="tab" data-group="g-pad">平板</button>
+        <button class="tab" data-group="g-watch">穿戴</button>
+        <button class="tab" data-group="g-audio">音频</button>
+      </div>
+    </div>
+    <div class="cat-grid" id="g-hot">
+      <article class="cat js-toast">
+        <div class="ph"><img src="phone-green.jpg" alt="李荣耀Magic9"></div>
+        <div class="body"><h3>李荣耀Magic9</h3><div class="slogan">超清双两亿 掌中电影机</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="laptops-sq.jpg" alt="李荣耀MagicBook"></div>
+        <div class="body"><h3>李荣耀MagicBook Pro 14</h3><div class="slogan">AI 全能旗舰</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="pad.jpg" alt="李荣耀MagicPad 4"></div>
+        <div class="body"><h3>李荣耀MagicPad 4</h3><div class="slogan">越上手 越拿手</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="watch.jpg" alt="李荣耀手表6 Pro"></div>
+        <div class="body"><h3>李荣耀手表6 Pro</h3><div class="slogan">心脏血压健康专家</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+    </div>
+    <div class="cat-grid" id="g-phone" hidden>
+      <article class="cat js-toast">
+        <div class="ph"><img src="phone-yellow.jpg" alt="李荣耀Magic9超能版"></div>
+        <div class="body"><h3>李荣耀Magic9 超能版</h3><div class="slogan">大屏超能旗舰</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="phone-green.jpg" alt="李荣耀Magic9 Pro Max"></div>
+        <div class="body"><h3>李荣耀Magic9 Pro Max</h3><div class="slogan">超清双两亿 掌中电影机</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="phone-green.jpg" alt="李荣耀Magic9 Pro"></div>
+        <div class="body"><h3>李荣耀Magic9 Pro</h3><div class="slogan">全焦段影像大师</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="phone-yellow.jpg" alt="李荣耀Magic9"></div>
+        <div class="body"><h3>李荣耀Magic9</h3><div class="slogan">AI 旗舰 经典再现</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+    </div>
+    <div class="cat-grid" id="g-pc" hidden>
+      <article class="cat js-toast">
+        <div class="ph"><img src="laptops-sq.jpg" alt="李荣耀MagicBook Pro 14"></div>
+        <div class="body"><h3>李荣耀MagicBook Pro 14</h3><div class="slogan">AI 全能旗舰</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="laptops-sq.jpg" alt="李荣耀MagicBook 14"></div>
+        <div class="body"><h3>李荣耀MagicBook 14</h3><div class="slogan">轻薄全能本</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="laptops-sq.jpg" alt="李荣耀笔记本X Plus系列"></div>
+        <div class="body"><h3>李荣耀笔记本 X Plus 系列</h3><div class="slogan">全能旗舰 大显身手</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="laptops-sq.jpg" alt="李荣耀MagicBook Art"></div>
+        <div class="body"><h3>李荣耀MagicBook Art 系列</h3><div class="slogan">艺术与性能兼得</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+    </div>
+    <div class="cat-grid" id="g-pad" hidden>
+      <article class="cat js-toast">
+        <div class="ph"><img src="pad.jpg" alt="李荣耀MagicPad 4"></div>
+        <div class="body"><h3>李荣耀MagicPad 4</h3><div class="slogan">越上手 越拿手</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="pad.jpg" alt="李荣耀平板GT系列"></div>
+        <div class="body"><h3>李荣耀平板 GT 系列</h3><div class="slogan">性能电竞平板</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="pad.jpg" alt="李荣耀平板V系列"></div>
+        <div class="body"><h3>李荣耀平板 V 系列</h3><div class="slogan">影音创作旗舰</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="pad.jpg" alt="李荣耀平板X系列"></div>
+        <div class="body"><h3>李荣耀平板 X 系列</h3><div class="slogan">护眼学习平板</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+    </div>
+    <div class="cat-grid" id="g-watch" hidden>
+      <article class="cat js-toast">
+        <div class="ph"><img src="watch.jpg" alt="李荣耀手表6 Pro"></div>
+        <div class="body"><h3>李荣耀手表6 Pro</h3><div class="slogan">心脏血压健康专家</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="watch.jpg" alt="李荣耀手表5"></div>
+        <div class="body"><h3>李荣耀手表 5</h3><div class="slogan">健康运动全能手环</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="watch.jpg" alt="李荣耀手环9"></div>
+        <div class="body"><h3>李荣耀手环 9</h3><div class="slogan">轻巧续航达人</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph"><img src="watch.jpg" alt="李荣耀手表GS Pro"></div>
+        <div class="body"><h3>李荣耀手表 GS Pro</h3><div class="slogan">户外探索旗舰</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+    </div>
+    <div class="cat-grid" id="g-audio" hidden>
+      <article class="cat js-toast">
+        <div class="ph" style="background:linear-gradient(150deg,#141a3e,#2b3174)"></div>
+        <div class="body"><h3>李荣耀Earbuds 5 Pro</h3><div class="slogan">空间音频 沉浸聆听</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph" style="background:linear-gradient(150deg,#0b1c52,#1e4fa8)"></div>
+        <div class="body"><h3>李荣耀Earbuds 4</h3><div class="slogan">超长续航 主动降噪</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph" style="background:linear-gradient(150deg,#101426,#4b46b8)"></div>
+        <div class="body"><h3>李荣耀亲选耳机</h3><div class="slogan">性价比之选</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+      <article class="cat js-toast">
+        <div class="ph" style="background:linear-gradient(150deg,#b7e0a8,#3f8a5a)"></div>
+        <div class="body"><h3>李荣耀亲选音箱</h3><div class="slogan">智能声场 全家畅听</div><div class="ops"><span class="buy">购买</span><span class="more">了解更多</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 活动 ===== -->
+<section class="section" style="padding-top:0" id="services">
+  <div class="wrap">
+    <div class="events">
+      <div class="event ev-kite js-toast">
+        <svg class="kite-svg" width="120" height="120" viewBox="0 0 120 120"><use href="#i-kite" xlink:href="#i-kite"/></svg>
+        <div class="en">HONOR MAGIC STORIES AWARDS 2026</div>
+        <h3>李荣耀手机影像计划</h3>
+        <div class="date">2026年3月10日 全球开启</div>
+        <span class="more">了解更多<svg width="14" height="14" style="display:inline-block;vertical-align:-2px"><use href="#i-arrow" xlink:href="#i-arrow"/></svg></span>
+      </div>
+      <div class="event ev-launch js-toast">
+        <div class="en">LIRONGYAO MAGIC EVENT</div>
+        <h3>李荣耀Magic盛典<br>暨李荣耀Magic9系列新品发布会</h3>
+        <div class="date">2026年9月28日 北京 · 阿莱联合研发</div>
+        <span class="more">了解更多<svg width="14" height="14" style="display:inline-block;vertical-align:-2px"><use href="#i-arrow" xlink:href="#i-arrow"/></svg></span>
+      </div>
+    </div>
+    <div class="tech-band">李荣耀创新科技</div>
+  </div>
+</section>
+
+<!-- ===== AI 智造创新赛 ===== -->
+<section class="wrap" style="padding-block:0 72px">
+  <div class="ai-banner js-toast">
+    <div class="inner">
+      <div class="txt">
+        <span class="badge">HONOR · intel</span>
+        <h3>李荣耀·英特尔<br>AI智造创新赛</h3>
+        <p>全能旗舰 大显身手 · 第三代英特尔® 酷睿™ Ultra 处理器家族</p>
+        <button class="btn btn-dark">了解更多</button>
+      </div>
+      <div class="img">
+        <img src="laptops.jpg" alt="李荣耀MagicBook系列">
+        <span class="chip">intel core ULTRA</span>
+      </div>
+    </div>
+  </div>
+  <div class="eye-banner js-toast">
+    <h3>李荣耀绿洲护眼屏</h3>
+    <p>AI 科学用眼，长时间学习也能从容应对</p>
+    <button class="btn">了解更多</button>
+  </div>
+</section>
+
+<!-- ===== 代言人 / 宣传片 ===== -->
 <section class="amb" id="ambassador">
   <div class="wrap amb-in">
-    <div class="amb-photo"><img src="full.jpg" alt="李荣耀代言人宣传照"></div>
+    <div class="film js-toast">
+      <img src="full.jpg" alt="李荣耀系列全球宣传片">
+      <button class="play" aria-label="播放宣传片"><svg width="26" height="26"><use href="#i-play" xlink:href="#i-play"/></svg></button>
+      <div class="cap">李荣耀系列全球宣传片 · 正在热映</div>
+    </div>
     <div>
-      <div class="eyebrow">Brand Ambassador</div>
-      <h2>品牌全球代言人<br>李荣耀</h2>
+      <div class="eyebrow" style="font-size:12px;font-weight:700;letter-spacing:.24em;color:var(--gray2)">BRAND AMBASSADOR</div>
+      <h2>李荣耀系列<br>全球代言人 · 李荣耀</h2>
       <div class="en">LI RONGYAO · 马厕班之光</div>
       <p class="quote">「发自己的呆，让别人说去吧。」</p>
       <div class="id-grid">
@@ -420,99 +536,86 @@ button{font-family:inherit;cursor:pointer}
   </div>
 </section>
 
-<!-- ===== 服务支持 ===== -->
-<section class="section" id="services">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Service</div>
-      <h2>李荣耀服务支持</h2>
-      <p class="desc">覆盖课堂与课间全场景，随叫随到（大概）。</p>
+<!-- ===== 影像 / AI ===== -->
+<section class="wrap" style="padding-block:72px">
+  <div class="duo">
+    <div class="duo-card duo-aimage js-toast">
+      <h3>AiMAGE 李荣耀影像</h3>
+      <p>影像科技，记录班里的每个瞬间</p>
+      <span class="more">了解更多</span>
     </div>
-    <div class="svc-grid">
-      <div class="svc js-toast">
-        <div class="ic"><svg width="22" height="22"><use href="#i-eraser" xlink:href="#i-eraser"/></svg></div>
-        <h3>借橡皮速达</h3>
-        <p>同桌橡皮，随借随还（还的时候看心情）。</p>
-      </div>
-      <div class="svc js-toast">
-        <div class="ic"><svg width="22" height="22"><use href="#i-bell" xlink:href="#i-bell"/></svg></div>
-        <h3>上课提醒服务</h3>
-        <p>老师提问前 0 秒提醒，提醒完继续发呆。</p>
-      </div>
-      <div class="svc js-toast">
-        <div class="ic"><svg width="22" height="22"><use href="#i-walk" xlink:href="#i-walk"/></svg></div>
-        <h3>放学陪走</h3>
-        <p>一起走到校门口，风雨无阻，电瓶车除外。</p>
-      </div>
-      <div class="svc js-toast">
-        <div class="ic"><svg width="22" height="22"><use href="#i-book" xlink:href="#i-book"/></svg></div>
-        <h3>作业互助</h3>
-        <p>你抄我数学，我抄你语文，共建学习共同体。</p>
-      </div>
+    <div class="duo-card duo-ai js-toast">
+      <h3>李荣耀AI</h3>
+      <p>AI 再进化，上课走神即时提醒</p>
+      <span class="more">了解更多</span>
     </div>
   </div>
 </section>
 
-<!-- ===== 会员条 ===== -->
-<section class="wrap" id="member">
-  <div class="member">
-    <div>
-      <h3>加入李荣耀俱乐部</h3>
-      <p>会员专享发呆津贴 · 首单立减 ¥0.01 · 同桌谢某不定期空降</p>
-    </div>
-    <button class="btn btn-dark js-toast">立即加入</button>
-  </div>
-</section>
-
-<!-- ===== Footer ===== -->
+<!-- ===== 页脚 ===== -->
 <footer class="footer">
   <div class="wrap">
-    <div class="footer-top">
+    <div class="footer-grid">
       <div>
-        <h4>了解李荣耀</h4>
+        <h4>消费者热线电话</h4>
+        <div class="hot-num">95030</div>
         <ul>
-          <li><a class="js-toast">代言人档案</a></li>
-          <li><a class="js-toast">班级大事记</a></li>
-          <li><a class="js-toast">同桌关系白皮书</a></li>
-          <li><a class="js-toast">加入俱乐部</a></li>
+          <li>消费者服务热线</li>
+          <li>在线客服</li>
         </ul>
       </div>
       <div>
-        <h4>产品系列</h4>
+        <h4>推荐产品</h4>
         <ul>
-          <li><a class="js-toast">发呆机</a></li>
-          <li><a class="js-toast">课桌平板</a></li>
-          <li><a class="js-toast">作业处理本</a></li>
-          <li><a class="js-toast">感知手环</a></li>
+          <li>手机</li><li>笔记本</li><li>平板</li><li>穿戴</li><li>音频</li><li>智慧屏</li><li>路由</li>
         </ul>
       </div>
       <div>
-        <h4>服务支持</h4>
+        <h4>服务与支持</h4>
         <ul>
-          <li><a class="js-toast">借橡皮</a></li>
-          <li><a class="js-toast">上课提醒</a></li>
-          <li><a class="js-toast">放学陪走</a></li>
-          <li><a class="js-toast">作业互助</a></li>
+          <li>服务政策</li><li>收费标准</li><li>服务进度</li><li>联系我们</li><li>寄修服务</li><li>门店服务</li>
         </ul>
       </div>
       <div>
-        <h4>更多</h4>
+        <h4>关于李荣耀</h4>
         <ul>
-          <li><a class="js-toast">马厕班新闻</a></li>
-          <li><a class="js-toast">教师点评</a></li>
-          <li><a class="js-toast">家长须知</a></li>
-          <li><a class="js-toast">联系谢某</a></li>
+          <li>李荣耀简介</li><li>新闻资讯</li><li>加入李荣耀</li><li>品牌声音</li><li>李荣耀活动</li><li>李荣耀ESG</li>
+        </ul>
+      </div>
+      <div>
+        <h4>软件应用</h4>
+        <ul>
+          <li>MagicOS</li><li>李荣耀互联</li><li>我的李荣耀</li><li>应用市场</li><li>李荣耀账号</li><li>李荣耀笔记</li><li>手机助理</li>
+        </ul>
+      </div>
+      <div>
+        <h4>购买渠道</h4>
+        <ul>
+          <li>李荣耀商城</li><li>李荣耀商城APP</li><li>李荣耀亲选</li><li>李荣耀零售店</li><li>李荣耀商城企业购</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 李荣耀科技有限公司 · 马厕班出品</span>
-      <span class="note">本页面为同学恶搞作品，与荣耀官方品牌无关，仅供娱乐。</span>
+      <div class="socials">
+        <span title="微博"><svg width="16" height="16"><use href="#i-weibo" xlink:href="#i-weibo"/></svg></span>
+        <span title="微信"><svg width="16" height="16"><use href="#i-wechat" xlink:href="#i-wechat"/></svg></span>
+        <span title="头条"><svg width="16" height="16"><use href="#i-toutiao" xlink:href="#i-toutiao"/></svg></span>
+        <span title="抖音"><svg width="16" height="16"><use href="#i-douyin" xlink:href="#i-douyin"/></svg></span>
+      </div>
+      <div class="footer-legals">
+        <span>网站地图</span><span>隐私政策</span><span>使用条款</span><span>关于cookies</span><span>法律信息</span><span>除名查询</span>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:18px;color:#62656d">
+      <span>版权所有 © 李荣耀终端股份有限公司 2020-2026 保留一切权利。</span>
+      <span>网站地图 · 隐私政策 · 使用条款 · 关于cookies · 法律信息</span>
+    </div>
+    <div style="text-align:center;margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.07);color:#7d8088;font-size:12px;line-height:1.8">
+      免责声明：本页面为同学恶搞作品，与荣耀（HONOR）官方品牌及其旗下产品、代言人无关；页面中的品牌名称、产品信息、代言人形象等均为恶搞演绎，仅供娱乐，不构成任何商业宣传或代言关系。
     </div>
   </div>
 </footer>
 
-<!-- ===== Toast ===== -->
 <div id="toast"></div>
 
 <script>
@@ -525,33 +628,54 @@ button{font-family:inherit;cursor:pointer}
     clearTimeout(timer);
     timer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2200);
   }
-  document.querySelectorAll('.js-toast').forEach(function(el){
+  document.querySelectorAll('.js-toast,.footer li,.footer-legals span,.socials span').forEach(function(el){
     el.addEventListener('click', function(e){
       e.preventDefault();
       toast('演示页面 · 纯属虚构');
     });
   });
 
-  // 产品系列 Tab 切换
+  // ===== 横幅轮播：3 秒自动切换 =====
+  var slides = document.querySelectorAll('.slide');
+  var dots = document.querySelectorAll('#slider-dots .dot');
+  var cur = 0, total = slides.length, autoTimer = null;
+  function goTo(i){
+    cur = (i + total) % total;
+    slides.forEach(function(s, k){ s.classList.toggle('on', k === cur); });
+    dots.forEach(function(d, k){ d.classList.toggle('on', k === cur); });
+  }
+  function next(){ goTo(cur + 1); }
+  function prev(){ goTo(cur - 1); }
+  function restart(){
+    clearInterval(autoTimer);
+    autoTimer = setInterval(next, 3000);
+  }
+  document.getElementById('arr-r').addEventListener('click', function(){ next(); restart(); });
+  document.getElementById('arr-l').addEventListener('click', function(){ prev(); restart(); });
+  dots.forEach(function(d){
+    d.addEventListener('click', function(){ goTo(parseInt(d.getAttribute('data-i'), 10)); restart(); });
+  });
+  restart();
+
+  // ===== 所有产品 Tabs =====
   var tabs = document.querySelectorAll('#tabs .tab');
-  var groups = document.querySelectorAll('.prod-grid');
+  var groups = document.querySelectorAll('.cat-grid');
   tabs.forEach(function(tab){
     tab.addEventListener('click', function(){
       tabs.forEach(function(t){ t.classList.remove('on'); });
       tab.classList.add('on');
-      var key = tab.getAttribute('data-tab');
-      groups.forEach(function(g){
-        g.hidden = g.getAttribute('data-group') !== key;
-      });
+      var key = tab.getAttribute('data-group');
+      groups.forEach(function(g){ g.hidden = g.id !== key; });
     });
   });
 
-  // 导航阴影
+  // ===== 导航阴影 =====
   var nav = document.getElementById('nav');
   window.addEventListener('scroll', function(){
     nav.classList.toggle('scrolled', window.scrollY > 8);
   }, { passive:true });
 })();
 </script>
+
 </body>
 </html>
